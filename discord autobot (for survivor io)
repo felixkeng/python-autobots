@@ -10,36 +10,34 @@ headers = {
 }
 
 payload1 = {
-    "content" : "[your message 1]"
+    "content" : "<:e_A_A:1052875594137882715>"
 }
 
 payload2 = {
-    "content" : "[your message 2]"
+    "content" : "<:e_PepeThumbs:1117751434759381033>"
 }
 
 payload3 = {
-    "content" : "[your message 3]"
+    "content" : "<:e_Lao:1052876177871740968>"
 }
 
 payload4 = {
-    "content" : "[your message 4]"
+    "content" : "<:e_PepePog:1098096456696610926>"
 }
 
 payload5 = {
-    "content" : "[your message 5]"
+    "content" : "<:e_BongoThonk:1052876870531698718>"
 }
 
 
 
-url1 = "discord channel id 1"
+url1 = "https://discord.com/api/v9/channels/1118601733946478642/messages"
 
-# should look like this "https://discord.com/api/v9/channels/some numbers/messages"
+url2 = "https://discord.com/api/v9/channels/1081213113652744222/messages"
 
-url2 = "discord channel id 2"
+url3 = "https://discord.com/api/v9/channels/1035906018770690058/messages"
 
-url3 = "discord channel id 3"
-
-url4 = "discord channel id 4"
+url4 = "https://discord.com/api/v9/channels/1083009044765220925/messages"
 
 url12 = [url1, url2]
 
