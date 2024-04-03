@@ -1,0 +1,67 @@
+import requests
+import time
+import random
+import datetime
+import os
+from plyer import notification
+
+headers = {
+    "Authorization" : "send a message in discord BROSER, inspect element and find authorisation"
+}
+
+payload1 = {
+    "content" : "[your message 1]"
+}
+
+payload2 = {
+    "content" : "[your message 2]"
+}
+
+payload3 = {
+    "content" : "[your message 3]"
+}
+
+payload4 = {
+    "content" : "[your message 4]"
+}
+
+payload5 = {
+    "content" : "[your message 5]"
+}
+
+
+
+url1 = "discord channel id 1"
+
+# should look like this "https://discord.com/api/v9/channels/some numbers/messages"
+
+url2 = "discord channel id 2"
+
+url3 = "discord channel id 3"
+
+url4 = "discord channel id 4"
+
+url12 = [url1, url2]
+
+url34 = [url3, url4]
+
+payloads = [payload1, payload2, payload3, payload4, payload5]
+
+for i in range(10): 
+    r = requests.post(*random.choices(url12), *random.choices(payloads), headers=headers)
+    time.sleep(random.randrange(120, 180))
+    r = requests.post(*random.choices(url34), *random.choices(payloads), headers=headers)
+    print(i," times completed", datetime.datetime.now().strftime("%X"))
+    if i == 9:
+        break
+    time.sleep(random.randrange(120, 180))
+
+os.system('say "kling"')
+os.system('afplay /System/Library/Sounds/Sosumi.aiff')
+
+notification.notify(
+    title = "10 messages sent",
+    message= "only run once every morning and night",
+    timeout=10
+)
+     
