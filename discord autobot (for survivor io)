@@ -3,7 +3,8 @@ import time
 import random
 import datetime
 import os
-from plyer import notification
+from functools import partial
+from mac_notifications import client
 
 headers = {
     "Authorization" : "send a message in discord BROSER, inspect element and find authorisation"
@@ -54,12 +55,12 @@ for i in range(10):
         break
     time.sleep(random.randrange(120, 180))
 
-os.system('say "kling"')
-os.system('afplay /System/Library/Sounds/Sosumi.aiff')
+def notify(title, text):
+    os.system("""
+              osascript -e 'display notification "{}" with title "{}"'
+              """.format(text, title))
 
-notification.notify(
-    title = "10 messages sent",
-    message= "only run once every morning and night",
-    timeout=10
-)
+notify("Discordd Spam Bot", "Sent 20 messages")
+
+quit()
      
