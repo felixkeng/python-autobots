@@ -1,0 +1,9 @@
+from functools import partial
+from mac_notifications import client
+
+def notify(title, text):
+    os.system("""
+              osascript -e 'display notification "{}" with title "{}"'
+              """.format(text, title))
+
+notify("Discordd Spam Bot", "Sent 20 messages")
