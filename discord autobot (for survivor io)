@@ -7,7 +7,7 @@ from functools import partial
 from mac_notifications import client
 
 headers = {
-    "Authorization" : "send a message in discord BROSER, inspect element and find authorisation"
+    "Authorization" : "Your discord token, check how to get it https://www.youtube.com/watch?v=pqW553a3_Tc "
 }
 
 payload1 = {
