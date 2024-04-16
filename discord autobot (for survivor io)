@@ -30,7 +30,7 @@ payload5 = {
     "content" : "<:e_BongoThonk:1052876870531698718>"
 }
 
-
+## you can add your content depending what message to send 
 
 url1 = "https://discord.com/api/v9/channels/1118601733946478642/messages"
 
