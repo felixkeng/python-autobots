@@ -13,7 +13,7 @@ headers = {
 payload1 = {
     "content" : "<:e_A_A:1052875594137882715>"
 }
-
+might want to change emoji to something like good morning or night cuz they will ban
 payload2 = {
     "content" : "<:e_PepeThumbs:1117751434759381033>"
 }
