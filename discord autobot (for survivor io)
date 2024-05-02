@@ -63,4 +63,6 @@ def notify(title, text):
 notify("Discordd Spam Bot", "Sent 20 messages")
 
 quit()
+
+pls do not use it anymore as it will result in a ban
      
